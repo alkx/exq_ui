@@ -34,10 +34,10 @@ defmodule ExqUi.Mixfile do
   # { :foobar, "0.1", git: "https://github.com/elixir-lang/foobar.git" }
   defp deps do
     [
-      { :exq, "~> 0.9"},
-      { :plug, ">= 0.8.1 and < 2.0.0"},
-      { :cowboy, "~> 1.0" },
-      { :excoveralls, "~> 0.3", only: :test },
+      {:exq, github: "alkx/exq", ref: "narrow-redix-version"},
+      {:plug, ">= 0.8.1 and < 2.0.0"},
+      {:cowboy, "~> 1.0" },
+      {:excoveralls, "~> 0.3", only: :test },
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
